@@ -1,14 +1,15 @@
 import { Component }          from '@angular/core';
 import { ROUTER_DIRECTIVES }  from '@angular/router';
-
+import {HTTP_PROVIDERS} from '@angular/http';
 import { DialogService }  from './dialog.service';
-import { HeroService }    from './heroes/hero.service';
+import { GithubService }    from './services/github.service';
 
 @Component({
   selector: 'my-app',
   templateUrl : '../dev/app.component.html',
   providers:  [
-    HeroService,
+    GithubService,
+    HTTP_PROVIDERS,
     DialogService
   ],
   directives: [ROUTER_DIRECTIVES]

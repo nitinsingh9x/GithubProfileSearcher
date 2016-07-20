@@ -2,7 +2,7 @@ import { provideRouter, RouterConfig }  from '@angular/router';
 
 import { crisisCenterRoutes } from './crisis-center/crisis-center.routes';
 import { heroesRoutes }       from './heroes/heroes.routes';
-
+import { profileRoutes }      from './profile/profile.routes';
 import { loginRoutes,
          authProviders }      from './login.routes';
 
@@ -11,7 +11,7 @@ import { CanDeactivateGuard } from './interfaces';
 export const routes: RouterConfig = [
   ...heroesRoutes,
   ...loginRoutes,
-  ...crisisCenterRoutes
+  ...profileRoutes
 ];
 
 export const appRouterProviders = [
